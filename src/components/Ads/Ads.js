@@ -6,25 +6,20 @@ const Ads = () => {
       <div className="container">
         <div className="row">
           <div className="text-center">
-            <h2 className="quality2">Our Queality</h2>
+            <h2 className="quality2">About us</h2>
           </div>
           <div className="col">
             {" "}
-            <iframe
-              className="img-fluid rounded mt-4"
-              width="356px"
-              height="300px"
-              src="https://www.youtube.com/embed/IBFpdKskBzM"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <img
+              className="img-fluid"
+              src="https://thumbs.dreamstime.com/b/young-girl-happy-looking-forward-to-finding-something-wear-sunglasses-reflection-light-sunshine-concept-summer-110416671.jpg"
+              alt=""
+            />
           </div>
           <div className="col">
             <img
               className="img-fluid"
-              src="https://i.ibb.co/pP3vJVT/aaa.jpg"
+              src="https://image.freepik.com/free-photo/portrait-surprised-girl-sunglasses-holding-cup_171337-9933.jpg"
               alt=""
             />
           </div>

@@ -16,9 +16,9 @@ const TenProduct = () => {
     }
     
   useEffect(()=>{
-      fetch('https://guarded-badlands-04784.herokuapp.com/product')
-      .then(res=>res.json())
-      .then(data=>setProducts(data))
+      fetch("https://gentle-harbor-19580.herokuapp.com/services")
+        .then((res) => res.json())
+        .then((data) => setProducts(data));
   },[]);
 
     return (
@@ -26,29 +26,39 @@ const TenProduct = () => {
         <div className="container mt-5">
           <div className="our-service-img">
             <img
-            className="img-fluid"
+              className="img-fluid"
               src="https://i.ibb.co/qxCCxHb/Our-Products02-Vector.png"
               alt=""
             />
           </div>
 
           <div className="row row-cols-1 row-cols-md-3 g-4">
-            {
-              products?.slice(0,6).map((product)=>(
-                <div className="col ">
-    <div className="card rounded main-col">
-      <img height="300px" src={product.img} className="card-img-top rounded" alt="..."/>
-      <div className="card-body">
-        <h5 className="card-title">{product.name}</h5>
-        <h5 className="card-title">{product.number}</h5>
-        <p className="card-text">{product.description}</p>
-        <button onClick={()=>{handleOrder(product._id)}} type="button" className="btn btn-outline-success">Order</button>
-
-      </div>
-    </div>
-  </div>
-              ))
-            }
+            {products?.slice(0, 6).map((product) => (
+              <div key={product._id} className="col ">
+                <div className="card rounded main-col">
+                  <img
+                    height="300px"
+                    src={product.img}
+                    className="card-img-top rounded"
+                    alt="..."
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{product.name}</h5>
+                    <h5 className="card-title">{product.number}</h5>
+                    <p className="card-text">{product.description}</p>
+                    <button
+                      onClick={() => {
+                        handleOrder(product._id);
+                      }}
+                      type="button"
+                      className="btn btn-outline-success"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

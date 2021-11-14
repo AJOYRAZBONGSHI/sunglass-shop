@@ -7,29 +7,27 @@ const Footer = () => {
         <div className="container pt-5">
           <div className="row">
             <div className="col">
-              
               <span className="icon">
                 <i className="m-2 fas fa-tablets"></i>
               </span>
-              Letest Products
+              Lete Products
               <div className="info mt-3">
                 <span className="details">
-                  <i className="m-2 fas fa-map-marker-alt"></i>Kalihati, Tangail
+                  <i className="m-2 fas fa-map-marker-alt"></i>Dhaka,Bangladesh
                 </span>
                 <br />
                 <span className="details">
-                  <i className="m-2 fas fa-phone-alt"></i> +8801643559826
+                  <i className="m-2 fas fa-phone-alt"></i> +880161212121
                 </span>
                 <br />
                 <span className="details">
-                  <i className="m-2 fas fa-at"></i> sourovpaul583@gmail.com
+                  <i className="m-2 fas fa-at"></i> admin@adimn.gmail.com
                 </span>
                 <br />
               </div>
             </div>
 
             <div className="col">
-              
               <span className="icon">
                 <i className="m-2 far fa-address-card"></i>
               </span>
@@ -39,13 +37,14 @@ const Footer = () => {
                   <img
                     width="100px"
                     className="rounded"
-                    src="https://i.ibb.co/SR0TYvb/professional-camera-laptop.jpg"
+                    src="https://image.freepik.com/free-photo/portrait-surprised-girl-sunglasses-holding-cup_171337-9933.jpg"
                     alt=""
                   />
                 </div>
                 <div className="col">
                   <p className="pasa">
-                    Firmwares' resolution selector allows the user to optionally lower the resolution, 
+                    2021 Hot Selling Custom Logo Brand Retro Sports Fashionable
+                    Driving Polarized Sunglasses Wholesale For Men.
                   </p>
                 </div>
 
@@ -53,20 +52,20 @@ const Footer = () => {
                   <img
                     width="100px"
                     className="rounded"
-                    src="https://i.ibb.co/ZXRrGZz/close-up-vintage-camera-white-background.jpg"
+                    src="https://thumbs.dreamstime.com/b/young-girl-happy-looking-forward-to-finding-something-wear-sunglasses-reflection-light-sunshine-concept-summer-110416671.jpg"
                     alt=""
                   />
                 </div>
                 <div className="col">
                   <p className="pasa">
-                  The two major types of digital image sensor are CCD and CMOS.
+                    HA20047 Fashion Sunglasses Men Acetate Optical Eyeglass
+                    Frame Oversize Eyeglasses Custom Logo.
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="col">
-              
               <span className="icon">
                 <i className="m-2 fas fa-question-circle"></i>
               </span>
@@ -80,62 +79,54 @@ const Footer = () => {
             </div>
 
             <div className="col">
-              
               <span className="icon">
                 <i className="m-2 fas fa-address-card"></i>
               </span>
               Queality
               <div className="row mt-3">
                 <div className="col-6">
-                  
                   <img
                     width="100px"
-                    src=" https://image.freepik.com/free-photo/professional-camera-close-up-photographer-s-desktop-blurred-background_169016-10677.jpg"
+                    src=" https://image.freepik.com/free-photo/portrait-surprised-girl-sunglasses-holding-cup_171337-9933.jpg"
                     className="footer_img"
                     alt=""
                   />
                 </div>
                 <div className="col-6">
-                  
                   <img
                     width="100px"
-                    src="https://image.freepik.com/free-photo/film-projector-dark-background-close-up-old-retro-things-shoot-with-vintage-style-colors-toned_155003-32075.jpg"
+                    src="https://thumbs.dreamstime.com/b/young-girl-happy-looking-forward-to-finding-something-wear-sunglasses-reflection-light-sunshine-concept-summer-110416671.jpg"
                     className="footer_img"
                     alt=""
                   />
                 </div>
                 <div className="col-6">
-                  
                   <img
                     width="100px"
-                    src="https://image.freepik.com/free-photo/vintage-photo-camera-composition_23-2148913941.jpg"
+                    src="https://thumbs.dreamstime.com/b/young-girl-happy-looking-forward-to-finding-something-wear-sunglasses-reflection-light-sunshine-concept-summer-110416671.jpg"
                     className="footer_img"
                     alt=""
                   />
                 </div>
                 <div className="col-6">
-                  
                   <img
                     width="100px"
-                    src="https://i.ibb.co/GMhMg4x/Professional-camera-on-a-blurred-background-with-a-laptop-The-concept-of-working-with-photos-and-vid.jpg"
+                    src="https://image.freepik.com/free-photo/portrait-surprised-girl-sunglasses-holding-cup_171337-9933.jpg"
                     className="footer_img"
                     alt=""
                   />
                 </div>
-              </div>           
-
+              </div>
             </div>
-           <div className="logos">
-           <i className="m-2 fab fa-facebook"></i>
-            <i className="m-2 fab fa-instagram"></i>
-            <i className="m-2 fab fa-linkedin-in"></i>
-            <i className="m-2 fab fa-twitter"></i>
-           </div>
+            <div className="logos">
+              <i className="m-2 fab fa-facebook"></i>
+              <i className="m-2 fab fa-instagram"></i>
+              <i className="m-2 fab fa-linkedin-in"></i>
+              <i className="m-2 fab fa-twitter"></i>
+            </div>
           </div>
 
-          
-        
-          <hr className="hr"/>
+          <hr className="hr" />
         </div>
       </div>
     </div>

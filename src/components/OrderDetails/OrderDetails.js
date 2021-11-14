@@ -12,20 +12,19 @@ const OrderDetails = () => {
   const {user}=useAuth()
   
 const onSubmit=(e)=>{
-    fetch('https://guarded-badlands-04784.herokuapp.com/orderDetails',{
-        method:'POST',
-        headers:{
-            'content-type':'application/json'
-        },
-        body: JSON.stringify(e)
+    fetch("https://gentle-harbor-19580.herokuapp.com/addProductInfo", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(e),
     })
-    .then(res=>res.json())
-    .then(data=>{
-        if(data.insertedId){
-          alert('Thanks for order')
-       
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          alert("Thanks for order");
         }
-    })
+      });
     
 }
 

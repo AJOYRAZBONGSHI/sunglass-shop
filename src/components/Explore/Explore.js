@@ -19,7 +19,7 @@ const Explore = () => {
 
     useEffect(()=>{
 
-        const url=`https://guarded-badlands-04784.herokuapp.com/product`;
+        const url = `https://gentle-harbor-19580.herokuapp.com/services`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>setAdminData(data))

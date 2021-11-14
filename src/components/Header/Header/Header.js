@@ -19,13 +19,24 @@ const Header = () => {
             <Navbar.Brand href="#home">Digital Sunglass Shop</Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
-              <Nav.Link style={{ color: "white" }} as={HashLink} to="/home">
+              <Nav.Link
+                className="fw-bold fs-4"
+                style={{ color: "white" }}
+                as={HashLink}
+                to="/home"
+              >
                 Home
               </Nav.Link>
-              <Nav.Link style={{ color: "white" }} as={HashLink} to="/explore">
+              <Nav.Link
+                className="fw-bold fs-4"
+                style={{ color: "white" }}
+                as={HashLink}
+                to="/explore"
+              >
                 Explore
               </Nav.Link>
               <Nav.Link
+                className="fw-bold fs-4"
                 style={{ color: "white" }}
                 as={HashLink}
                 to="/dashboard"
@@ -33,7 +44,10 @@ const Header = () => {
                 Dashboard
               </Nav.Link>
               {user?.email ? (
-                <Button onClick={logOut}> Logout</Button>
+                <Button className="btn btn-primary" onClick={logOut}>
+                  {" "}
+                  Logout
+                </Button>
               ) : (
                 <Nav.Link style={{ color: "white" }} as={HashLink} to="/login">
                   Login

@@ -11,12 +11,10 @@ const ConfirmOrder = () => {
     const[productDetails,setProductDetails]=useState({});
 
    useEffect(()=>{
-       fetch('https://guarded-badlands-04784.herokuapp.com/product')
-       .then(res=>res.json())
-       .then(data=>setDetails(data))
-       .catch((error)=>{
-
-       })
+       fetch("https://gentle-harbor-19580.herokuapp.com/services")
+         .then((res) => res.json())
+         .then((data) => setDetails(data))
+         .catch((error) => {});
    },[]);
 
 useEffect(()=>{
@@ -25,15 +23,6 @@ useEffect(()=>{
         setProductDetails(combineOrderId)
     }
 },[details,id]);
-
-
-
-
-
-
-
-
-
 
 
     return (
@@ -46,7 +35,7 @@ useEffect(()=>{
              
                  <div className="col-sm-12 col-md-4 col-lg-4 mt-5">
                      <div className="card m-auto" style={{width: "18rem"}}>
-                <img src={productDetails.img} className="card-img-top" alt="..." />
+                <img src={productDetails?.img} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title"> {productDetails.name}</h5>
                   <h5 className="card-title"> {productDetails.number}</h5>

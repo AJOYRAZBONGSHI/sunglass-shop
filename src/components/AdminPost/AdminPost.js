@@ -13,8 +13,8 @@ const AdminPost = () => {
    const desRef=useRef()
    const priceRef=useRef()
    const imgRef=useRef()
- // sucess message
- const [sucess,setSucess]=useState(false)
+ // success message
+ const [success,setSuccess]=useState(false)
 
 
    const handleAddProduct =e=>{
@@ -25,20 +25,20 @@ const AdminPost = () => {
     const img=imgRef.current.value;
     const newProduct={name,description,number,img};
 
-    fetch('https://guarded-badlands-04784.herokuapp.com/product',{
-        method:'POST',
-        headers:{
-            'content-type':'application/json'
-        },
-        body: JSON.stringify(newProduct)
+    fetch("https://gentle-harbor-19580.herokuapp.com/services", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newProduct),
     })
-    .then(res=>res.json())
-    .then(data=>{
-        if(data.insertedId){
-            setSucess(true)
-          e.target.reset()
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          setSuccess(true);
+          e.target.reset();
         }
-    })
+      });
     e.preventDefault()
    }
     return (
@@ -61,7 +61,7 @@ const AdminPost = () => {
              <input className="submitButton rounded" type="submit" value="Post" />     
             </form>
             {
-            sucess && <Alert severity="success">
+            success && <Alert severity="success">
             <AlertTitle>Card Posted Successfully</AlertTitle>
           </Alert>
           }

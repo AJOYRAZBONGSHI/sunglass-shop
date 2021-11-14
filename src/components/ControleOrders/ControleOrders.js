@@ -11,15 +11,15 @@ const ControleOrders = () => {
     const [orderPerson, setOrderPerson] = useState([]);
 
     useEffect(()=>{
-        fetch("https://guarded-badlands-04784.herokuapp.com/orderDetails")
-        .then(res=>res.json())
-        .then(data=>setOrderPerson(data))
+        fetch("https://gentle-harbor-19580.herokuapp.com/addProductInfo")
+          .then((res) => res.json())
+          .then((data) => setOrderPerson(data));
     },[ ])
 
 
     const handleDelete=id=>{
 
-        const url=`https://guarded-badlands-04784.herokuapp.com/orderDetails/${id}`
+        const url = `https://gentle-harbor-19580.herokuapp.com/addProductInfo/${id}`;
     
         fetch(url,{
             method:'DELETE'

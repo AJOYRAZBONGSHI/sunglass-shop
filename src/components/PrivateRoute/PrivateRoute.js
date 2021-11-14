@@ -4,8 +4,8 @@ import useAuth from './../../hooks/useAuth';
 import { CircularProgress} from '@mui/material';
 
 const PrivateRoute = ({children,...rest}) => {
-    const {user,loding}=useAuth();
-    if(loding){return  <CircularProgress />}
+    const {user,loading}=useAuth();
+    if(loading){return  <CircularProgress />}
     return (
       <Route
       {...rest}
