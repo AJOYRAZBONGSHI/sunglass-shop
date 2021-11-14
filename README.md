@@ -8,17 +8,11 @@
 <li>Admin can post and delete orders if desired.</li>
 <li>If the admin wants, he can make another person an admin.</li>
 
+## Our website link: https://sharp-wozniak-28fe64.netlify.app/home
 
-<b>Our website link: </b>
+### Client side link : https://github.com/programming-hero-web-course-4/niche-website-client-side-AJOYRAZBONGSHI
 
-
-
-
-
-
-
-
-
+### Server side link : https://github.com/programming-hero-web-course-4/niche-website-server-side-AJOYRAZBONGSHI
 
 </br>
 </br>
@@ -30,12 +24,6 @@
 </br>
 </br>
 </br>
-
-
-
-
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
