@@ -27,7 +27,7 @@ const TenProduct = () => {
           <div className="our-service-img">
             <img
               className="img-fluid"
-              src="https://lh3.googleusercontent.com/proxy/lOt5O-cHo9aTcuMiJj1KgqH7K0z_rDYgfwQTNBhKLGt-tm1a2dfg8cOl1aVYcJy8x7Bo0BDeV6LVAfLtoKYFvV7BUP700nGZmwAbHG6tA_7SwQ"
+              src="https://bcpowercontrols.com/wp-content/uploads/2018/05/our-products.png"
               alt=""
             />
           </div>
