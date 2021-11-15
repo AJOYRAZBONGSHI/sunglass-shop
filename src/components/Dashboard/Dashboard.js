@@ -106,7 +106,7 @@ const {logOut}=useAuth()
   };
  let {path,url}=useRouteMatch();
   return (
-    <Box  sx={{ display: 'flex' }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
         <Toolbar>
@@ -116,64 +116,105 @@ const {logOut}=useAuth()
             onClick={handleDrawerOpen}
             edge="start"
             sx={{
-              marginRight: '36px',
-              ...(open && { display: 'none' }),
+              marginRight: "36px",
+              ...(open && { display: "none" }),
             }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-          Dashboard 
+            Dashboard
           </Typography>
           <Typography variant="h6" noWrap component="div">
-        <span onClick={logOut}><i className="fas fa-sign-out-alt m-3"></i>Logout</span>
+            <span onClick={logOut}>
+              <i className="fas fa-sign-out-alt m-3"></i>Logout
+            </span>
           </Typography>
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+            {theme.direction === "rtl" ? (
+              <ChevronRightIcon />
+            ) : (
+              <ChevronLeftIcon />
+            )}
           </IconButton>
         </DrawerHeader>
         <Divider />
-    
         <Divider />
-     <Link to={'/home'}> <button className="dashboard_icon"><i className=" mt-4 fas fa-home home"></i>Home</button> </Link>
-        <Link to={`${url}/pay`}>  <button className="dashboard_icon"><i className="fab fa-amazon-pay pay"></i>Payment</button> </Link>
-     <Link to={`${url}/revew`}> <button className="dashboard_icon"><i className="far fa-grin-stars revew"></i>Revew</button> </Link>
-    {
-      admin &&
-         <Link to={`${url}/adminPost`}>  <button className="dashboard_icon"><i className=" mt-4 fas fa-user-shield admin"></i>Admin Post</button> </Link>
-      
-    }
-     {
-       admin &&  <Link to={`${url}/createAdmin`}><button className="dashboard_icon"><i className=" mt-4 fas fa-users-cog admin"></i>Make Admin</button> </Link>
-      
-     }
-     
-        <Link to={`${url}/manageOrder`}> <button className="dashboard_icon"><i className=" mt-4 fas fa-shopping-cart explore"></i>Manage Order</button> </Link>
+        <Link to={"/home"}>
+          {" "}
+          <button className="dashboard_icon">
+            <i className=" mt-4 fas fa-house-user home"></i>Home
+          </button>{" "}
+        </Link>
+        <Link to={`${url}/pay`}>
+          {" "}
+          <button className="dashboard_icon">
+            <i className="fab fa-cc-amazon-pay pay"></i>Payment method
+          </button>{" "}
+        </Link>
+        <Link to={`${url}/revew`}>
+          {" "}
+          <button className="dashboard_icon">
+            <i className="far fa-smile revew"></i>Review
+          </button>{" "}
+        </Link>
+        {admin && (
+          <Link to={`${url}/adminPost`}>
+            {" "}
+            <button className="dashboard_icon">
+              <i className=" mt-4 fas fa-folder-plus admin"></i>Add Product
+            </button>{" "}
+          </Link>
+        )}
+        {admin && (
+          <Link to={`${url}/manageProduct`}>
+            {" "}
+            <button className="dashboard_icon">
+              <i className=" mt-4 fas fa-concierge-bell admin"></i>Manage
+              Product
+            </button>{" "}
+          </Link>
+        )}
+        {admin && (
+          <Link to={`${url}/createAdmin`}>
+            <button className="dashboard_icon">
+              <i className=" mt-4 fas fa-user-cog admin"></i>Create Admin
+            </button>{" "}
+          </Link>
+        )}
 
-     
+        <Link to={`${url}/manageOrder`}>
+          {" "}
+          <button className="dashboard_icon">
+            <i className=" mt-4 fas fa-cart-plus explore"></i> Order Management
+          </button>{" "}
+        </Link>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
 
-       <Switch>
-           <Route exact path={`${path}`}></Route>
-           <Route exact path={`${path}/pay`}><Payment></Payment></Route>
-           <Route exact path={`${path}/revew`}><Revew></Revew></Route>
-           <AdminRoute exact path={`${path}/adminPost`}>
-               <AdminPost></AdminPost>
-               </AdminRoute>
-           <AdminRoute exact path={`${path}/createAdmin`}>
-               <CreateAdmin></CreateAdmin>
-               </AdminRoute>
-           <Route exact path={`${path}/manageOrder`}>               
-          <ManageOrder></ManageOrder>
-            </Route>
-       </Switch>
-
+        <Switch>
+          <Route exact path={`${path}`}></Route>
+          <Route exact path={`${path}/pay`}>
+            <Payment></Payment>
+          </Route>
+          <Route exact path={`${path}/revew`}>
+            <Revew></Revew>
+          </Route>
+          <AdminRoute exact path={`${path}/adminPost`}>
+            <AdminPost></AdminPost>
+          </AdminRoute>
+          <AdminRoute exact path={`${path}/createAdmin`}>
+            <CreateAdmin></CreateAdmin>
+          </AdminRoute>
+          <Route exact path={`${path}/manageOrder`}>
+            <ManageOrder></ManageOrder>
+          </Route>
+        </Switch>
       </Box>
     </Box>
   );

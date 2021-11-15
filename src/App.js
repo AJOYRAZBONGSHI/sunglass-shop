@@ -17,6 +17,7 @@ import CreateAdmin from './components/CreateAdmin/CreateAdmin';
 import Payment from './components/Payment/Payment';
 import NotFound from './NotFound/NotFound';
 import Revew from './components/Revew/Revew';
+import ManageProduct from './components/Manage Product/ManageProduct';
 
 function App() {
   return (
@@ -59,6 +60,9 @@ function App() {
          </Route>
          <Route path="revew">
            <Revew></Revew>
+         </Route>
+         <Route path="/manageProduct">
+           <ManageProduct></ManageProduct>
          </Route>
          <Route path='placeOrder/>id'>
            <PlaceOrder></PlaceOrder>

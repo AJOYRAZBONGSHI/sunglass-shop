@@ -18,7 +18,7 @@ const handleAddProduct = (e) => {
   const reviewText = textRef.current.value;
   const newProduct = { name, rating, reviewText };
 
-  fetch("http://localhost:5000/reviews", {
+  fetch("https://gentle-harbor-19580.herokuapp.com/reviews", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -42,7 +42,7 @@ const handleAddProduct = (e) => {
             <h2 className="text-center pt-5">Review Box</h2>
 
             <form className="form" onSubmit={handleAddProduct}>
-              <span className="about">Customer name :</span>
+              <span className="pro_price">Customer name :</span>
               <input
                 ref={nameRef}
                 className="descrip rounded"
@@ -52,7 +52,7 @@ const handleAddProduct = (e) => {
                 required="required"
                 value={user.displayName}
               />
-              <span className="about">Review text :</span>
+              <span className="pro_price">Review text :</span>
               <input
                 ref={textRef}
                 className="descrip rounded"

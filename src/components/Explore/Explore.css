@@ -11,3 +11,8 @@
     transition: all 0.5s;
     border-radius: 10px;
 }
+.more-product{
+    width: 350px;
+    height: 150px;
+    margin-left: 370px;
+}

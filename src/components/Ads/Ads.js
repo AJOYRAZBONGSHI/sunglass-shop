@@ -6,7 +6,11 @@ const Ads = () => {
       <div className="container">
         <div className="row">
           <div className="text-center">
-            <h2 className="quality2">About us</h2>
+            <img
+              className="w-50 mb-3 about"
+              src="https://www.impactplus.com/hs-fs/hubfs/blog-image-uploads/best-about-us-pages.jpg?length=1200&name=best-about-us-pages.jpg"
+              alt=""
+            />
           </div>
           <div className="col">
             {" "}

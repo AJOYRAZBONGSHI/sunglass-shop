@@ -33,7 +33,7 @@ const Header = () => {
                 as={HashLink}
                 to="/explore"
               >
-                Explore
+                More Product
               </Nav.Link>
               <Nav.Link
                 className="fw-bold fs-4"

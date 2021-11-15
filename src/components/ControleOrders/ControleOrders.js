@@ -44,7 +44,7 @@ const ControleOrders = () => {
          <Table className="table table-dark table-hover" striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
+            <th>List</th>
             <th>Name</th>
             <th>Email</th>
             <th>Address</th>
