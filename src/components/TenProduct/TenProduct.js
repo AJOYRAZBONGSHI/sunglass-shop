@@ -35,7 +35,7 @@ const TenProduct = () => {
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {products?.slice(0, 6).map((product) => (
               <div key={product._id} className="col ">
-                <div className="card rounded main-col">
+                <div className="card bg-danger rounded main-col">
                   <img
                     height="300px"
                     src={product.img}
@@ -51,7 +51,7 @@ const TenProduct = () => {
                         handleOrder(product._id);
                       }}
                       type="button"
-                      className="btn btn-outline-success"
+                      className="btn btn-success"
                     >
                       Buy Now
                     </button>

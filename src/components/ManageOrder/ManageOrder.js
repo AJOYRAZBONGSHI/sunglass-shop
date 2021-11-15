@@ -5,7 +5,7 @@ const ManageOrder = () => {
     const [orderMan] = useState("AllOrderMan");
 
     return (
-        <div>
+        <div className=''>
              <div className="row d-flex justify-content-center">
             
             <div className="col-md-9 text-center  text-center">

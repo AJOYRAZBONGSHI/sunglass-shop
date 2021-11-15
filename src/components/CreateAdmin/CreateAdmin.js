@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { Button, Alert,AlertTitle } from '@mui/material';
 import useAuth from './../../hooks/useAuth';
+import "./CreateAdmin.css"
 
 const CreateAdmin = () => {
     const[email,setEmail]=useState('');
@@ -38,20 +39,20 @@ const CreateAdmin = () => {
         e.preventDefault()
     }
     return (
-        <div>
-            
-            <form  onSubmit={handleAdminSubmit}>
-                <strong>Email Only</strong> <br />
-                <input onBlur={handleOnBlur} type="email" name="" id="" /> <br />
-                <Button variant="contained" type="submit">Create Admin</Button>
-            </form>
-            {
-            success && <Alert severity="success">
-            <AlertTitle>Admin Creation Successfully</AlertTitle>
-          </Alert> 
-          }
-         
-        </div>
+      <div className='admin py-4'>
+        <form className="w-50 mx-auto" onSubmit={handleAdminSubmit}>
+          <strong className='text-danger'>Enter Email</strong> <br />
+          <input onBlur={handleOnBlur} type="email" name="" id="" /> <br />
+          <button className="btn btn-danger" type="submit">
+            Make Admin
+          </button>
+        </form>
+        {success && (
+          <Alert severity="success">
+            <AlertTitle>Admin Making Successfully...</AlertTitle>
+          </Alert>
+        )}
+      </div>
     );
 };
 

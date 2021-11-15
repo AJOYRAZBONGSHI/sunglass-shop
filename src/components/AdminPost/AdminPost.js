@@ -42,7 +42,7 @@ const AdminPost = () => {
     e.preventDefault()
    }
     return (
-      <div>
+      <div className='w-50 mx-auto'>
         <div className="main-container mt-5 mb-5">
           <div className=" container mt-5">
             <h2 className="text-center text-primary pt-5">Add a Service</h2>

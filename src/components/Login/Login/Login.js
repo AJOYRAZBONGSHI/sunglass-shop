@@ -3,6 +3,7 @@ import {AlertTitle, Alert,Button, CircularProgress,Box} from '@mui/material';
 import { NavLink,useLocation,useHistory } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import useAuth from './../../../hooks/useAuth';
+import "./Login.css"
 
 const Login = () => {
 
@@ -36,7 +37,7 @@ const Login = () => {
 
 
     return (
-      <div>
+      <div className="w-50 mx-auto login mt-4">
         <h1 className="text-center">Login</h1>
         <Container className="main-form">
           <form onSubmit={handleLogSubmit}>
@@ -58,13 +59,17 @@ const Login = () => {
               id=""
             />{" "}
             <br />
-            <Button type="submit">Login</Button> <br />
+            <button className="btn btn-success mb-2" type="submit">
+              Login
+            </button>{" "}
+            <br />
             <NavLink
               to="/register"
               style={{
                 textDecoration: "none",
                 cursor: "pointer",
-                color: "red",
+                color: "black",
+                display: "block",
               }}
             >
               Create New Account!
@@ -84,7 +89,12 @@ const Login = () => {
                 <AlertTitle>{error}</AlertTitle>
               </Alert>
             )}
-            <Button onClick={handleGoogleSignIn}>Login With Google</Button>
+            <button
+              className="btn btn-primary my-3"
+              onClick={handleGoogleSignIn}
+            >
+              Login With Google
+            </button>
           </form>
         </Container>
       </div>

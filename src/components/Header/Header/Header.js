@@ -49,9 +49,15 @@ const Header = () => {
                   Logout
                 </Button>
               ) : (
-                <Nav.Link style={{ color: "white" }} as={HashLink} to="/login">
-                  Login
-                </Nav.Link>
+                <button className='btn btn-danger'>
+                  <Nav.Link
+                    style={{ color: "white" }}
+                    as={HashLink}
+                    to="/login"
+                  >
+                    Login
+                  </Nav.Link>
+                </button>
               )}
             </Navbar.Collapse>
           </Container>
